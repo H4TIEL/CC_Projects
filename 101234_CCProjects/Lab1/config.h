@@ -3,5 +3,4 @@
 #define PORT 3
 #define STRING 4
 #define INTEGER 5
-#define COLON 6
-#define INDENT 7
+#define INDENT 6
