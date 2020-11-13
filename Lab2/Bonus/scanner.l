@@ -1,9 +1,13 @@
+%{
+%}
+
+
 %%
 [0-9]+		printf("#Numbers");
-.		ECHO;
+.			;
 %%
 
-int main() 
+int main()
 {
 	yylex();
 }

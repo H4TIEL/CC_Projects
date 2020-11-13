@@ -19,6 +19,3 @@ jobs:
     - name: make Lab 1 Bonus
       working-directory: Lab1
       run: make
-    - name: make Lab 2 Bonus
-      working-directory: Lab2/Bonus
-      run: make
