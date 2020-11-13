@@ -13,7 +13,7 @@ jobs:
   
     steps:
     - uses: actions/checkout@v2
-    -name: requirement
+    - name: requirement
       run: sudo apt install flex
     - name: make Lab 1
       working-directory: Lab1
