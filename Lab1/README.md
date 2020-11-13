@@ -39,7 +39,7 @@ $ make
 ```
 ### Manual
 ```sh
-$ cd  101234_CCProjects/Lab1
+$ cd  CCProjects/Lab1
 $ lex scanner.l
 $ gcc scanner.c lex.yy.c -o scanner
 $ ./scanner < config.yaml
