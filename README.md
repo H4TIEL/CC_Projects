@@ -1,4 +1,4 @@
-# Compile Construction
+# Compiler Construction
 
 [![Labs Actions Status](https://github.com/H4TIEL/CC_Projects/workflows/C-CI/badge.svg)](https://github.com/H4TIEL/CC_Projects/actions)
 
