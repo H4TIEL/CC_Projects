@@ -25,12 +25,11 @@ service:
 ```
 
 
-| Configuration | Test pass             | Test Fail                                                                                                                                 |
-|---------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| service       | service syntax OK     | Syntax error on line {lineno}, Expected ':'                                                                                               |
-| name          | name syntax OK {name} | Syntax error on line {lineno}, Expected string '{name}' found {error} Syntax error on line {lineno}, Expected indent '{ }' found {error}  |
-| port          | port syntax OK {port} | Syntax error on line {lineno}, Expected integer '{port}' found {error} Syntax error on line {lineno}, Expected indent '{ }' found {error} |
-
+| Configuration | Test pass             | Test Fail                               |
+|---------------|-----------------------|-----------------------------------------|
+| service       | service syntax OK     | Syntax error on line {lineno}, {error}  |
+| name          | name syntax OK {name} | Syntax error on line {lineno}, {error}  |
+| port          | port syntax OK {port} | Syntax error on line {lineno},  {error} |
 
 
 ## Installation
@@ -48,4 +47,4 @@ $ ./scanner < config.yaml
 
 # Bonus
 
-[Flex](https://github.com/H4TIEL/CC_Projects/101234_CCProjects/Lab1/Bonus
+[Flex](https://github.com/H4TIEL/CC_Projects/101234_CCProjects/Lab1/Bonus)
