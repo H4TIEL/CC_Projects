@@ -59,4 +59,4 @@ $lex scanner.l
 Running this command generates a table-drive scanner `lex.yy.c`  a source file containing tonnes of C 
 code that implements a finite automata encoding all defined patterns and including the code for the actions specified. 
 
-This is the output of the scanner which in turn can be fed into the parse to perform intended actions.
+This is the output of the scanner which in turn can be fed into the parser to perform intended actions.
