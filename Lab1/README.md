@@ -47,4 +47,4 @@ $ ./scanner < config.yaml
 
 # Bonus
 
-[Flex](https://github.com/H4TIEL/CC_Projects/101234_CCProjects/Lab1/Bonus)
+[Flex](https://github.com/H4TIEL/CC_Projects/tree/main/Lab1/Bonus)
