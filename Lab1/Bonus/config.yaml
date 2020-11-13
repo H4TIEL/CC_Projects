@@ -1,3 +1,0 @@
-service:
-  name: Postgres
-  port: 5423
