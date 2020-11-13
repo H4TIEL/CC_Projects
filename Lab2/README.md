@@ -17,6 +17,8 @@ In addition, we use a header file `config.h` to define constants for our matched
 A input file consist of three parts 
 
 ![scanner.l](https://github.com/H4TIEL/CC_Projects/blob/main/Lab2/assets/scanner.png)
+
+
 FIRST PART
 %%
 SECOND PART
