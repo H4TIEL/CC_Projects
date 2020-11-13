@@ -19,13 +19,6 @@ A input file consist of three parts
 ![scanner.l](https://github.com/H4TIEL/CC_Projects/blob/main/Lab2/assets/scanner.png)
 
 
-FIRST PART
-%%
-SECOND PART
-pattern action
-%%
-THIRD PART
-
 The Declaration and subroutines i.e the first part and third part are optional.
 
 The middle section consists of rules that lex translates into the lexical analyzer. Each rule consists of regular expression and code to run when regular expression is matched. 
@@ -36,12 +29,14 @@ Unmatched text is copied to standard outThe regular expressions are defined in t
 | [0-9]+    | printf("Number"); |
 | [a-zA-Z]+ | printf("Letter"); |
 
-For example the pattern to match is numbers `[0-9]+` which is one or more matches of numbers and the action is to print the string 'Numb#define SERVICE 1
+For example the pattern to match is numbers `[0-9]+` which is one or more matches of numbers and the action is to print the string 'Number'
+
 ```c
 %{
      #include "config.h"
 %}
 ```
+
 The header file consists of constants for matched patterns, for example when matching the string service in the middle section the constant integer 1 is returned.
 ```c
 #define SERVICE 1
