@@ -32,13 +32,13 @@ int main(void)
 					vtoken = yylex();
 					if(vtoken != STRING)
 					{
-						printf("Syntax error on line %d, Expeceted string '{name}' found %s\n", yylineno, yytext);
+						printf("Syntax error on line %d, Expected string '{name}' found %s\n", yylineno, yytext);
 						return 1;
 					}
 				}
 				else
 				{
-						printf("Syntax error on line %d, Expeceted indent '{  }' found %s\n", yylineno, yytext);
+						printf("Syntax error on line %d, Expected indent '{  }' found %s\n", yylineno, yytext);
 						return 1;
 				}
 			printf("%s syntax OK %s \n", names[ntoken], yytext);
@@ -51,14 +51,14 @@ int main(void)
 					vtoken = yylex();
 					if(vtoken != INTEGER)
 					{
-						printf("[Port] Syntax error on line %d, Expeceted integer':' found %s\n", yylineno, yytext);
+						printf("[Port] Syntax error on line %d, Expected integer':' found %s\n", yylineno, yytext);
 						return 1;
 					}
 				}
 				else
 				{
 				
-						printf("Syntax error on line %d, Expeceted indent '{  }' found %s\n", yylineno, yytext);
+						printf("Syntax error on line %d, Expected indent '{  }' found %s\n", yylineno, yytext);
 						return 1;
 				}
 			printf("%s syntax OK %s \n", names[ntoken], yytext);

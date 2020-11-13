@@ -1,24 +1,15 @@
 %{
-#include <stdio.h>
-#include <string.h>
-#include "scanner.h"
-void showError();
+int numChars = 0, numWords = 0, numLines = 0;
 %}
 
-
-numbers     ([0-9])+
-alpha       ([a-zA-Z])+
-
+%%
+\n		{numLines++; numChars++;}
+[^ \t\n]+	{numWords++; numChars += yyleng;}
+.		{numChars++;}
 %%
 
-{alpha}			   {sscanf(yytext, "%s", yylval.name); return (STRING);}
-{numbers}      {yylval.number = atoi(yytext); return (NUM);}
-";"      		   {return (SEMICOLON);}
-.      		     {showError(); return(OTHER);}
-
-%%
-
-
-void showError(){
-    printf("Other input");
+int main() 
+{
+	yylex();
+	printf("Characters:%d\nWords:%d\nLines:%d\n", numChars, numWords, numLines);
 }

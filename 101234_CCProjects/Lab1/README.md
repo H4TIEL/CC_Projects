@@ -3,8 +3,8 @@
 Simple lexical analyzer implemented in C
 
 # Features
-
-  - Scan YAML config files ; default is config.yaml
+  - The generated scanner can be used to scan [YAML](https://yaml.org/) config files.
+  - For example, if a yaml file is used to configure service and ports such config.yaml
 
 Properties
   - Service
@@ -12,14 +12,26 @@ Properties
   - Port
 
 
-> service:
->    name: Postgres
->   port: 5432
-
 ## Requirements
-* [Lex] 
-* [Flex] 
-* [gcc] 
+* Lex
+* gcc
+
+
+### Valid config.yaml file
+```sh
+service:
+  name: Postgres
+  port: 5432
+```
+
+
+| Configuration | Test pass             | Test Fail                                                                                                                                 |
+|---------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| service       | service syntax OK     | Syntax error on line {lineno}, Expected ':'                                                                                               |
+| name          | name syntax OK {name} | Syntax error on line {lineno}, Expected string '{name}' found {error} Syntax error on line {lineno}, Expected indent '{ }' found {error}  |
+| port          | port syntax OK {port} | Syntax error on line {lineno}, Expected integer '{port}' found {error} Syntax error on line {lineno}, Expected indent '{ }' found {error} |
+
+
 
 ## Installation
 ### Auto
@@ -36,18 +48,4 @@ $ ./scanner < config.yaml
 
 # Bonus
 
-Use Flex
-
-## Installation
-### Auto
-```sh
-$ make
-```
-### Manual
-```sh
-$ flex -l scanner.l
-$ bison -dv scanner.y 
-$ gcc scanner.c lex.yy.c -lfl -o scanner
-```
-
-
+[Flex](https://github.com/H4TIEL/CC_Projects/101234_CCProjects/Lab1/Bonus
