@@ -6,6 +6,8 @@ The lexical analysis is the first step in the compilation process. A scanner pro
 
 >To illustrate the scanner process the source in [Lab1](https://github.com/H4TIEL/CC_Projects/tree/main/Lab1) will be used to explain the process.
 
+![lex](https://github.com/H4TIEL/CC_Projects/blob/main/Lab2/assets/lex.png)
+
 The input file to the scanner is source file with a set of regular expressions. It takes a specification and generates a combined non-deterministic finite automata (NFA) to recognize all defined patterns, converts it to an equivalent deterministic finite automata (DFA), minimizes the automaton as much as possible, and generates C code that will implement it.
 
 The scanner reads characters from the file, it will gather them until it forms the 
